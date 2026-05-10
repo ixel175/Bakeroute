@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeRoute - Our Bakers</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png.jpg" alt="BakeRoute Logo" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="browse cakes.html">Browse Cakes</a></li>
+                <li><a href="bakers.html">Bakers</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="btn">
+                <button onclick="window.location.href='index.html'">Sign In</button>
+                <button onclick="window.location.href='index.html'">Sign Up</button>
+            </div>
+            <div class="location">📍 Kampala</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured" style="padding-top: 80px;">
+            <h2>Meet Our Top Bakers</h2>
+            <div class="cake-grid">
+                <!-- Using cake-card class for consistent grid and hover styles -->
+                <div class="cake-card">
+                    <img src="baker imag 2.jfif" alt="Baker Mephious" style="object-position: top;">
+                    <div class="cake-info" style="text-align: center;">
+                        <h3>Mephious</h3>
+                        <p style="color: #cbd5e1; margin-bottom: 15px;">Specialty: Wedding Cakes</p>
+                        <p class="price">⭐ 4.9 (120 reviews)</p>
+                        <button class="btn primary" style="width:100%; padding:12px;">View Profile</button>
+                    </div>
+                </div>
+
+                <div class="cake-card">
+                    <img src="baker imag.jfif" alt="Baker John" style="object-position: top;">
+                    <div class="cake-info" style="text-align: center;">
+                        <h3>John The Baker</h3>
+                        <p style="color: #cbd5e1; margin-bottom: 15px;">Specialty: Custom Cupcakes</p>
+                        <p class="price">⭐ 4.8 (85 reviews)</p>
+                        <button class="btn primary" style="width:100%; padding:12px;">View Profile</button>
+                    </div>
+                </div>
+
+                <div class="cake-card">
+                    <img src="baker imag 3.jfif" alt="Baker Emma" style="object-position: center;">
+                    <div class="cake-info" style="text-align: center;">
+                        <h3>Emma's Pastries</h3>
+                        <p style="color: #cbd5e1; margin-bottom: 15px;">Specialty: Vegan & Gluten-Free</p>
+                        <p class="price">⭐ 5.0 (200 reviews)</p>
+                        <button class="btn primary" style="width:100%; padding:12px;">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

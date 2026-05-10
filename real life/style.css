@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fffaf0;     /* Soft cream background */
+    color: #3a2f2f;                /* Dark chocolate text */
+    line-height: 1.6;
+}
+
+/* Navbar - More attractive */
+.navbar {
+    background: linear-gradient(to right, #4a2c0f, #6b3e1e);  /* Rich brown gradient */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* Makes it look premium */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;   /* Gold on hover */
+}
+
+/* Hero Section - Big & Attractive */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('url(Tarta Red Velvet Saludable.jfif)') center/cover no-repeat;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btn {
+    padding: 14px 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.primary {
+    background-color: #ffd700;   /* Gold button */
+    color: #3a2f2f;
+}
+
+.primary:hover {
+    background-color: #ffed8f;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.secondary:hover {
+    background-color: white;
+    color: #3a2f2f;
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 25px 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    width: 85%;
+    max-width: 700px;
+    padding: 16px 25px;
+    border: 3px solid #ffd700;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Featured Section */
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #4a2c0f;
+}
+
+/* Cake Grid */
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cake-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-10px);
+}
+
+.cake-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.cake-info {
+    padding: 18px;
+}
+
+.cake-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin: 10px 0;
+}

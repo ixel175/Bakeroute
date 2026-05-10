@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeRoute - Login & Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login_container">
+            <div class="login_title">
+                <span id="form-title">Login</span>
+            </div>
+            
+            <form id="auth-form" action="home.html" onsubmit="event.preventDefault(); window.location.href='home.html';">
+                <div class="input_wrapper">
+                    <input type="text" id="user" class="input_field" required>
+                    <label for="user" class="label">Username</label>
+                    <i class="fa-regular fa-user icon"></i>
+                </div>
+
+                <div class="input_wrapper">
+                    <input type="password" id="pass" class="input_field" required>
+                    <label for="pass" class="label">Password</label>
+                    <i class="fa-solid fa-lock icon"></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <div class="input_wrapper">
+                    <input type="submit" id="submit-btn" class="input-submit" value="Login">
+                </div>
+
+                <div class="signup">
+                    <span id="toggle-text">Don't have an account? <a href="#" id="toggle-btn" onclick="toggleForm(event)">Sign Up</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let isLogin = true;
+        function toggleForm(event) {
+            event.preventDefault();
+            isLogin = !isLogin;
+            const title = document.getElementById('form-title');
+            const submitBtn = document.getElementById('submit-btn');
+            const toggleText = document.getElementById('toggle-text');
+            
+            if (isLogin) {
+                title.innerText = 'Login';
+                submitBtn.value = 'Login';
+                toggleText.innerHTML = 'Don\'t have an account? <a href="#" id="toggle-btn" onclick="toggleForm(event)">Sign Up</a>';
+            } else {
+                title.innerText = 'Sign Up';
+                submitBtn.value = 'Sign Up';
+                toggleText.innerHTML = 'Already have an account? <a href="#" id="toggle-btn" onclick="toggleForm(event)">Login</a>';
+            }
+        }
+    </script>
+</body>
+</html>

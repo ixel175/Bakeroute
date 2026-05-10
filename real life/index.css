@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --second-color: #cbd5e1;
+    --primary-color: #38bdf8;
+    --black-color: #0f172a;
+}
+
+body {
+    background-position: center;
+    background-image: url("logo.png.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-attachment: fixed;
+}
+
+
+a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login_container {
+    position: relative;
+    backdrop-filter: blur(25px);
+    width: 450px;
+    border: 2px solid var(--primary-color);
+    padding: 7.5em 2.5em 4em 2.5em;
+    border-radius: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    color: var(--second-color);
+}
+
+.login_title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    transform: translate(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+}
+
+.login_title span {
+    color: var(--black-color);
+    font-size: 30px;
+}
+
+.login_title::before {
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+/* Missing Form Styles */
+.input_wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.input_field {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--second-color);
+    color: #fff;
+    font-size: 16px;
+    padding-right: 35px;
+    transition: 0.3s;
+}
+
+.input_field:focus, .input_field:valid {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: var(--second-color);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input_field:focus ~ .label,
+.input_field:valid ~ .label {
+    top: -5px;
+    color: var(--primary-color);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: var(--second-color);
+    font-size: 18px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: var(--second-color);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.forgot a {
+    color: var(--second-color);
+}
+
+.forgot a:hover {
+    color: var(--primary-color);
+}
+
+.input-submit {
+    width: 100%;
+    height: 50px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black-color);
+    transition: 0.3s;
+}
+
+.input-submit:hover {
+    background: #fff;
+}
+
+.signup {
+    text-align: center;
+    font-size: 14px;
+    color: var(--second-color);
+    margin-top: 20px;
+}
+
+.signup a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
